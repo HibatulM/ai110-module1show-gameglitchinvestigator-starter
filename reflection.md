@@ -7,6 +7,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+
 The game gave incorrect hints when the user guessed a number. Even when the user gussed the highest number in the range the hint was to enter a higher number.
 It showed the incorrect score to the user. The user score was 0 but the game showed that the user's score was 5
 The new game doesn't reset everything and new inputs are not registered. 
@@ -21,8 +22,8 @@ Document at least 3 bugs you found. Add rows as needed.
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
 | 50 | Hint Shows to guess lower| Hint Shows to guess igher| No Console Output |
-| 20 | Hint shows to guess higher| | Hint Shows to guess lower | | No Consoloe Output| 
-| New Game + New Guess  | | Hint appears, win message goes away| | Win Message still there, input not recorded | |No Console Log|
+| 20 | Hint shows to guess higher| Hint Shows to guess lower | No Consoloe Output| 
+| New Game + New Guess  |  Hint appears, win message goes away| Win Message still there, input not recorded | No Console Log|
 
 ---
 
