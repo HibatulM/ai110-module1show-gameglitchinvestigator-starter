@@ -25,9 +25,16 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+   The game's purpose is to help the user correctly guess the secret number using hints, and give a correct score depending on how many attempts it took to find the secret number
+- [x] Detail which bugs you found.
+   1. The hints were flipped
+   2. The new game button didn't work 
+   3. The score went down for correct answers and up for wrong answers
+- [x] Explain what fixes you applied.
+   1. I fixed the hints by just changing the output text
+   2. The new game was fixed through changing the faulty logic that stopped the game and didn't start even though the new game button was clicked. This was fixed by only stopping the game if the user didn't click on the new game
+   3. The score was fixed through fixing the calculation for the scores 
 
 ## 📸 Demo Walkthrough
 
