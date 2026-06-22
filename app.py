@@ -72,17 +72,22 @@ with col3:
 
 if new_game:
     st.session_state.attempts = 0
-    st.session_state.secret = random.randint(1, 100)
+    st.session_state.secret = random.randint(low, high)
     st.success("New game started.")
-    st.rerun()
 
 if st.session_state.status != "playing":
     if st.session_state.status == "won":
-        #FIX: When new game is pressed a new game starts
-        st.success("You already won. Start a new game to play again.")
+        if new_game:
+            st.session_state.status = "playing"
+        else:
+            st.success("You already won. Start a new game to play again.")
+            st.stop()
     else:
-        st.error("Game over. Start a new game to try again.")
-    st.stop()
+        if new_game:
+            st.session_state.status = "playing"
+        else:
+            st.error("Game over. Start a new game to try again.")
+            st.stop()
 
 if submit:
     st.session_state.attempts += 1
