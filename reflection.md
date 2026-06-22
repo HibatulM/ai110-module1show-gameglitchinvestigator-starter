@@ -14,7 +14,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 4. The input bar says to enter to submit the guess but pressing enter doesn't do anything.
 5. The new game doesn't do anything even after winning the game, as in hints don't appear and the winning or losing message doesn't go away after the game ends, though the new game feature works if the user has not won 
 6. Gives Negative score when guessed correctly 
-7. Difficulty not accurately represented 
+7. Difficulty not accurately represented with the number of attempts
 
 
 **Bug Reproduction Log**
