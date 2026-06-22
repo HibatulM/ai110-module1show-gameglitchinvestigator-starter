@@ -1,6 +1,6 @@
 import pytest
 
-from logic_utils import check_guess, parse_guess
+from logic_utils import check_guess, get_range_for_difficulty, parse_guess
 
 def test_winning_guess():
     # If the secret is 50 and guess is 50, it should be a win
@@ -40,3 +40,13 @@ def test_check_guess_outcomes(guess, secret, expected):
 def test_parse_guess(raw, expected):
     # parse_guess returns (ok, guess_int, error_message)
     assert parse_guess(raw) == expected
+
+@pytest.mark.parametrize("difficulty, expected", [
+    ("Easy", (1, 20)),       # easy range
+    ("Normal", (1, 100)),    # normal range
+    ("Hard", (1, 50)),       # hard range
+    ("Unknown", (1, 100)),   # unrecognized falls back to default
+])
+def test_get_range_for_difficulty(difficulty, expected):
+    # get_range_for_difficulty returns the (low, high) inclusive range
+    assert get_range_for_difficulty(difficulty) == expected
