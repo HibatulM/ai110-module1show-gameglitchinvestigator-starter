@@ -8,12 +8,12 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
-1. The game gave incorrect hints when the user guessed a number. Even when the user gussed the highest number in the range the hint was to enter a higher number. *fixed*
-2. It showed the incorrect score to the user. The user score was 0 but the game showed that the user's score was 5 *fixed*
-3. The new game doesn't reset everything and new inputs are not registered. *fix it*
+1. The game gave incorrect hints when the user guessed a number. Even when the user gussed the highest number in the range the hint was to enter a higher number. 
+2. It showed the incorrect score to the user. The user score was 0 but the game showed that the user's score was 5 
+3. The new game doesn't reset everything and new inputs are not registered. 
 4. The new game doesn't do anything even after winning the game, as in hints don't appear and the winning or losing message doesn't go away after the game ends, though the new game feature works if the user has not won 
-5. Gives Negative score when guessed correctly *fixed*
-6. Difficulty not accurately represented with the number of attempts *fixed*
+5. Gives Negative score when guessed correctly 
+6. Difficulty not accurately represented with the number of attempts 
 
 
 
