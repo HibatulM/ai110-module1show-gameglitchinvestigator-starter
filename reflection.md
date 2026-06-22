@@ -8,11 +8,13 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
-The game gave incorrect hints when the user guessed a number. Even when the user gussed the highest number in the range the hint was to enter a higher number.
-It showed the incorrect score to the user. The user score was 0 but the game showed that the user's score was 5
-The new game doesn't reset everything and new inputs are not registered. 
-The input bar says to enter to submit the guess but pressing enter doesn't do anything.
-The new game doesn't do anything even after winning the game, as in hints don't appear and the wiining or losing message doesn't go away after the game ends 
+1. The game gave incorrect hints when the user guessed a number. Even when the user gussed the highest number in the range the hint was to enter a higher number. *fix it*
+2. It showed the incorrect score to the user. The user score was 0 but the game showed that the user's score was 5 *fix it*
+3. The new game doesn't reset everything and new inputs are not registered. *fix it*
+4. The input bar says to enter to submit the guess but pressing enter doesn't do anything.
+5. The new game doesn't do anything even after winning the game, as in hints don't appear and the winning or losing message doesn't go away after the game ends, though the new game feature works if the user has not won 
+6. Gives Negative score when guessed correctly 
+7. Difficulty not accurately represented 
 
 
 **Bug Reproduction Log**
@@ -23,7 +25,8 @@ Document at least 3 bugs you found. Add rows as needed.
 |-------|-------------------|-----------------|------------------------|
 | 50 | Hint Shows to guess lower| Hint Shows to guess igher| No Console Output |
 | 20 | Hint shows to guess higher| Hint Shows to guess lower | No Consoloe Output| 
-| New Game + New Guess  |  Hint appears, win message goes away| Win Message still there, input not recorded | No Console Log|
+| New Game + New Guess  |  Hint appears, win message goes away| Win Message still there, input not recorded | No Console Output|
+| Toggle the Show Hint | Hint hides when the show hint is toggled off and hint shows the the show hint is toggled on | Hint hides after show toggled is off but toggle it on doesn't make the hint show up again| No Console Output| 
 
 ---
 
